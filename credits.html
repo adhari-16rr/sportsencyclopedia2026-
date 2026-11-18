@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="فريق عمل موسوعة عالم الرياضة الرقمية">
+<title>فريق العمل - موسوعة عالم الرياضة الرقمية</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-icon">🏆</span><span><b>عالم الرياضة</b><small>الموسوعة الرقمية</small></span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="القائمة">☰</button>
+  <nav id="nav"><a href="index.html#home">الرئيسية</a><a href="index.html#sports">الموسوعة</a><a href="index.html#skills">المهارات</a><a href="index.html#health">الصحة والسلامة</a><a href="index.html#quiz">الاختبار</a><a href="index.html#challenges">التحديات</a><a href="index.html#videos">الفيديوهات</a><a href="index.html#achievements">الإنجازات</a><a href="index.html#about">عن المشروع</a><a href="credits.html" class="active">فريق العمل</a></nav>
+</header>
+<main>
+<section class="hero wrap credits-hero">
+  <div class="hero-copy">
+    <div class="eyebrow"><span></span> شكرًا لكم</div>
+    <h1>فريق العمل<br><em>والشكر والتقدير.</em></h1>
+    <p>نقدم شكرنا الجزيل لكل من ساهم في إنجاز هذا المشروع التعليمي.</p>
+  </div>
+  <div class="hero-art"><div class="pitch-lines"></div><div class="orbit"></div><div class="ball">🏆</div><div class="art-caption">TEAM · CREDITS</div></div>
+</section>
+<section class="wrap credits-section">
+  <div class="credits-container">
+    <div class="credit-group">
+      <div class="credit-label">الإشراف وإعداد المحتوى الرياضي:</div>
+      <div class="credit-name">المعلمة منال الرمامنة</div>
+    </div>
+    <div class="credit-divider"></div>
+    <div class="credit-group">
+      <div class="credit-label">التصميم والتطوير البرمجي:</div>
+      <div class="credit-name">عذاري الشوابكة</div>
+    </div>
+    <div class="credit-divider"></div>
+    <div class="credit-group">
+      <div class="credit-label">البريد الإلكتروني:</div>
+      <div class="credit-email"><a href="mailto:adharialshawbekah@gmail.com" class="email-link">adharialshawbekah@gmail.com</a></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><a class="brand" href="index.html#home"><span class="brand-icon">🏆</span><span><b>عالم الرياضة</b><small>الموسوعة الرقمية</small></span></a><p>نتعلّم الرياضة · نمارسها · نبدع فيها</p><a href="index.html#home">العودة للرئيسية ↑</a><small class="copyright">© <span id="year"></span> موسوعة عالم الرياضة الرقمية</small></footer>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("menuBtn").addEventListener("click", () => document.getElementById("nav").classList.toggle("open"));
+document.querySelectorAll("#nav a").forEach(a => a.addEventListener("click", () => document.getElementById("nav").classList.remove("open")));
+</script>
+</body>
+</html>
